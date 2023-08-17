@@ -1,0 +1,68 @@
+{
+  "name": "mimic-tree",
+  "version": "0.0.0",
+  "description": "mimic-tree is a Node.js library for creating dynamic data trees that mimic the structure of source data. It reproduces the original folder paths and file structures like JSON or YAML with different values, maintaining the integrity of the original structure.",
+  "keywords": [
+    "json",
+    "yaml",
+    "merge",
+    "hierarchies"
+  ],
+  "repository": {
+    "url": "https://github.com/hacomono-lib/mimic-tree",
+    "type": "git"
+  },
+  "author": "mew-ton <mxl_usmarc@slmail.mewton.jp>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "packageManager": "yarn@3.6.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vitest",
+    "build": "tsup",
+    "test": "run-p test:*",
+    "test:spec": "vitest --run --silent",
+    "test:type": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint --ext .ts .",
+    "format": "prettier --write . --ignore-path=.eslintignore",
+    "dedup": "yarn-deduplicate --strategy fewer"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "prettier": "^3.0.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1",
+    "yaml": "^2.3.1",
+    "yarn-run-all": "latest"
+  },
+  "peerDependencies": {
+    "typescript": ">= 4.0.0",
+    "yaml": ">= 2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    },
+    "yaml": {
+      "optional": true
+    }
+  }
+}
