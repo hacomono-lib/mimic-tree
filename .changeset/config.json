@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "hacomono-lib/json-fusion" }
+    { "repo": "hacomono-lib/mimic-tree" }
   ],
   "commit": false,
   "access": "restricted",
