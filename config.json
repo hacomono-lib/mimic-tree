@@ -1,0 +1,7 @@
+{
+  "environment": "productionproduction",
+  "database": {
+    "host": "localhostlocalhost",
+    "port": 10864
+  }
+}

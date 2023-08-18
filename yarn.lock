@@ -668,6 +668,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@supercharge/promise-pool@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@supercharge/promise-pool@npm:3.0.0"
+  checksum: 761e7269e54b101c971f8436183c44def24f16a2a9928cfd3f937178fecceb259d4c752287e94dcb547237d9de1e52f1d15db14cb9c83148265cb67c38489a97
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -3485,11 +3492,13 @@ __metadata:
   dependencies:
     "@changesets/changelog-github": ^0.4.8
     "@changesets/cli": ^2.26.2
+    "@supercharge/promise-pool": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^6.4.0
     "@typescript-eslint/parser": ^6.4.0
     eslint: ^8.47.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-import: ^2.28.0
+    globby: ^11.1.0
     prettier: ^3.0.2
     tsup: ^7.2.0
     typescript: ^5.1.6
