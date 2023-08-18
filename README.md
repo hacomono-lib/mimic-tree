@@ -62,7 +62,7 @@ export async function translate(fromLocale: string, toLocale: string) {
     cwd: resolve(__dirname, 'locales'),
     dist: toLocale,
     extensions: ['json', 'yaml'],
-    convert: async (v: string) =>
+    convert: async (v) =>
       typeof v === 'string' ? await translate(v, fromLocale, toLocale) : v
   })
 }
