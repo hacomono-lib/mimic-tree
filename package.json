@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@supercharge/promise-pool": "^3.0.0",
-    "globby": "^11.1.0"
+    "globby": "^13.2.2"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
