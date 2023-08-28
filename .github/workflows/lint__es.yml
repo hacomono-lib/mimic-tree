@@ -17,7 +17,7 @@ jobs:
     if: |
       (contains(github.event.pull_request.labels.*.name, 'renovate') &&
         contains(github.event.pull_request.labels.*.name, 'renovate:lint')) ||
-      contains(github.event.pull_request.labels.*.name, 'renovate') == false
+      !contains(github.event.pull_request.labels.*.name, 'renovate')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
